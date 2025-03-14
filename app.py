@@ -33,4 +33,6 @@ with gr.Blocks() as demo:
 
     play_button.click(play_game, inputs=user_choice, outputs=[result, win_count, loss_count, tie_count])
 
-demo.launch()
+demo.launch(share=True)
+# This code creates a simple Rock, Paper, Scissors game using Gradio. The user can choose their move, and the bot randomly selects its move. The result is displayed along with the updated win, loss, and tie counts. The game is launched with a shareable link for easy access and interaction.
+# The `play_game` function handles the game logic, comparing the user's choice with the bot's choice and updating the win/loss/tie counts accordingly. The Gradio interface is set up with a radio button for user input, a text box for displaying results, and buttons to play the game. The `gr.Blocks` context manager is used to organize the layout of the interface elements.
